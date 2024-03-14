@@ -10,6 +10,8 @@ export default {
         "primary-yellow": "#D0A534",
         "primary-gray-light": "#111725",
         "primary-gray-dark": "#0A0F1D",
+        "section-title-gray": "#161B29",
+        gray: "#C2C2C2",
       },
       keyframes: {
         "fade-in": {
