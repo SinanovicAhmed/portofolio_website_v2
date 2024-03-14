@@ -13,6 +13,9 @@ export default {
         "section-title-gray": "#161B29",
         gray: "#C2C2C2",
       },
+      dropShadow: {
+        white: "1px 1px 1px rgba(255, 255, 255, 0.4)",
+      },
       keyframes: {
         "fade-in": {
           "0%": { opacity: 0 },

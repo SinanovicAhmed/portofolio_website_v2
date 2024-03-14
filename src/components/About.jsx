@@ -1,23 +1,27 @@
 import SectionTitle from "./SectionTitle";
 import cv from "../assets/files/cv.pdf";
+import Button from "./Button";
 const About = () => {
   return (
-    <section id="about" className="w-full bg-primary-gray-light pb-20">
+    <section id="about" className="w-full bg-primary-gray-light pb-28">
       <SectionTitle title={"About me"} />
       <div className="mx-auto flex gap-16 justify-center md:justify-between items-center max-w-[1200px] px-4 sm:px-10 pt-16">
-        <div className="flex flex-col items-center md:items-start min-w-[300px] max-w-[500px]">
-          <h2 className="text-gray md:text-lg font-semibold pb-4">Hi there, I am Ahmed Sinanović</h2>
+        <div className="h-full flex flex-col items-center md:items-start min-w-[300px] max-w-[500px]">
+          <h2 className="text-gray md:text-lg font-semibold pb-4">Hi there, welcome to my portofolio website</h2>
           <p className="text-gray text-center md:text-start text-sm md:text-base font-light pb-6">
-            I am Ahmed Sinanović, a dedicated Software Engineer and Web Developer. <br /> I am driven by a passion for
-            continuous learning and ongoing exploration in the ever-evolving world of web development. <br /> For a
-            closer look at my work, feel free to explore my projects on{" "}
+            I am Ahmed Sinanović, a dedicated Software Engineer and Web Developer. <br />
+            <br /> I am driven by a passion for continuous learning and ongoing exploration in the ever-evolving world
+            of web development. <br />
+            <br /> Few technologies I&apos;ve been working with recently include JS, TS, ReactJS, NextJS, NodeJS and
+            more. <br /> <br />
+            For a closer look at my work, feel free to explore my projects on{" "}
             <a href="https://github.com/SinanovicAhmed" target="_blank" rel="noopener" className="text-primary-yellow">
               GitHub
             </a>
           </p>
 
           <a href={cv} download="cv" target="_blank" rel="noreferrer">
-            <button className="text-primary-yellow p-2 border-2 border-primary-yellow">Download CV</button>
+            <Button text={"Download CV"} />
           </a>
         </div>
         <div className="hidden md:block min-w-[300px] max-w-[400px]">

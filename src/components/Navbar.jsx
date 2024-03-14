@@ -3,6 +3,7 @@ import { navigationLinks } from "../constants/navigationLinks";
 import Hamburger from "hamburger-react";
 import { useState } from "react";
 import useNavbarBackground from "../hooks/useNavbarBackground";
+
 const Navbar = () => {
   const [isOpen, setOpen] = useState(false);
   const { showBackground } = useNavbarBackground();
@@ -17,10 +18,10 @@ const Navbar = () => {
         <h2 className="text-2xl text-white">
           <span className="font-bold text-primary-yellow">SA</span>dev
         </h2>
-        <ul className="hidden sm:flex gap-5 text-white">
+        <ul className="hidden sm:flex gap-8 text-white">
           {navigationLinks.map((link) => (
             <li className="cursor-pointer" key={link.id}>
-              <Link activeClass="text-primary-yellow" smooth spy to={link.id}>
+              <Link offset={-60} activeClass="text-primary-yellow" smooth spy to={link.id}>
                 {link.name}
               </Link>
             </li>
@@ -34,7 +35,7 @@ const Navbar = () => {
         <ul className="w-full flex sm:hidden flex-col items-center gap-3 text-white animate-fade-in">
           {navigationLinks.map((link) => (
             <li className="cursor-pointer" key={link.id}>
-              <Link activeClass="text-primary-yellow" smooth spy to={link.id}>
+              <Link offset={-60} activeClass="text-primary-yellow" smooth spy to={link.id}>
                 {link.name}
               </Link>
             </li>

@@ -3,7 +3,7 @@ import SectionTitle from "./SectionTitle";
 
 const Services = () => {
   return (
-    <section id="services" className="w-full bg-primary-gray-light pb-20">
+    <section id="services" className="w-full bg-primary-gray-light pb-28">
       <SectionTitle title={"Services"} />
       <div className="mx-auto flex flex-col md:flex-row items-center justify-between gap-3 max-w-[1200px] px-4 sm:px-10 pt-16">
         {services.map((service) => (
