@@ -7,7 +7,12 @@ const Services = () => {
       <SectionTitle title={"Services"} />
       <div className="mx-auto flex flex-col md:flex-row items-center justify-between gap-3 max-w-[1200px] px-4 sm:px-10 pt-16">
         {services.map((service) => (
-          <div key={service.header} className="flex flex-col bg-gray bg-opacity-5 w-[300px] h-[300px]">
+          <div
+            data-aos="fade-up"
+            data-aos-delay="200"
+            key={service.header}
+            className="flex flex-col bg-gray bg-opacity-5 w-[300px] h-[300px]"
+          >
             <div>
               <img className="mx-auto py-4" width={50} height={50} src={service.icon} />
             </div>

@@ -6,7 +6,10 @@ const About = () => {
     <section id="about" className="w-full bg-primary-gray-light pb-28">
       <SectionTitle title={"About me"} />
       <div className="mx-auto flex gap-16 justify-center md:justify-between items-center max-w-[1200px] px-4 sm:px-10 pt-16">
-        <div className="h-full flex flex-col items-center md:items-start min-w-[300px] max-w-[500px]">
+        <div
+          data-aos="fade-right"
+          className="h-full flex flex-col items-center md:items-start min-w-[300px] max-w-[500px]"
+        >
           <h2 className="text-gray md:text-lg font-semibold pb-4">Hi there, welcome to my portofolio website</h2>
           <p className="text-gray text-center md:text-start text-sm md:text-base font-light pb-6">
             I am Ahmed Sinanović, a dedicated Software Engineer and Web Developer. <br />
@@ -24,7 +27,7 @@ const About = () => {
             <Button text={"Download CV"} />
           </a>
         </div>
-        <div className="hidden md:block min-w-[300px] max-w-[400px]">
+        <div data-aos="fade-left" className="hidden md:block min-w-[300px] max-w-[400px]">
           <img src="/images/photoofme.png" alt="about me photo" className="w-full h-auto opacity-70" />
         </div>
       </div>

@@ -1,6 +1,6 @@
 const SectionTitle = ({ title }) => {
   return (
-    <div className="relative flex justify-center">
+    <div data-aos="fade-in" className="relative flex justify-center">
       <h2 className=" text-white text-opacity-5 text-5xl md:text-6xl font-black tracking-wider">
         {title.toUpperCase()}
       </h2>

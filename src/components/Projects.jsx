@@ -20,6 +20,8 @@ const Projects = () => {
       <div className="mx-auto max-w-[1200px] grid grid-cols-1 md:grid-cols-2 content-center justify-items-center gap-16 px-4 sm:px-10 pt-16">
         {projects.slice(0, visibleProjects).map((project) => (
           <div
+            data-aos="fade-up"
+            data-aos-delay="200"
             key={project.image}
             className="group relative min-w-[200px] max-w-[400px] rounded-md hover:cursor-pointer"
           >
