@@ -15,13 +15,13 @@ const Navbar = () => {
       }`}
     >
       <div className="w-full mx-auto px-4 sm:px-10 h-16 max-w-[1200px] flex justify-between items-center">
-        <h2 className="text-2xl text-white">
+        <h2 data-aos="fade-down" data-aos-delay="1500" className="text-2xl text-white">
           <span className="font-bold text-primary-yellow">SA</span>dev
         </h2>
         <ul className="hidden sm:flex gap-8 text-white">
-          {navigationLinks.map((link) => (
-            <li className="cursor-pointer" key={link.id}>
-              <Link offset={-60} activeClass="text-primary-yellow" smooth spy to={link.id}>
+          {navigationLinks.map((link, index) => (
+            <li data-aos="fade-down" data-aos-delay={1500 + (index + 1) * 100} className="cursor-pointer" key={link.id}>
+              <Link offset={-80} activeClass="text-primary-yellow" smooth spy to={link.id}>
                 {link.name}
               </Link>
             </li>

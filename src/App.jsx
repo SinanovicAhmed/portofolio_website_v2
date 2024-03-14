@@ -13,6 +13,7 @@ const App = () => {
   useEffect(() => {
     AOS.init({
       offset: 200,
+      duration: 700,
     });
     AOS.refresh();
   }, []);
