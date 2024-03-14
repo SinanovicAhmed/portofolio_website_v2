@@ -4,7 +4,7 @@ const About = () => {
   return (
     <section id="about" className="w-full bg-primary-gray-light pb-20">
       <SectionTitle title={"About me"} />
-      <div className="mx-auto flex justify-center md:justify-between items-center max-w-[1200px] px-4 sm:px-10 pt-8">
+      <div className="mx-auto flex gap-16 justify-center md:justify-between items-center max-w-[1200px] px-4 sm:px-10 pt-16">
         <div className="flex flex-col items-center md:items-start min-w-[300px] max-w-[500px]">
           <h2 className="text-gray md:text-lg font-semibold pb-4">Hi there, I am Ahmed Sinanović</h2>
           <p className="text-gray text-center md:text-start text-sm md:text-base font-light pb-6">

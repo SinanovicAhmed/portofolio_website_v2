@@ -9,7 +9,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`w-full fixed flex flex-col transition-all duration-500 backdrop-blur-sm ${
+      className={`z-10 w-full fixed flex flex-col transition-all duration-500 backdrop-blur-sm ${
         showBackground ? "bg-primary-gray-light bg-opacity-20" : ""
       }`}
     >
