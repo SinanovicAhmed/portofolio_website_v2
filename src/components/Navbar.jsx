@@ -27,7 +27,7 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
-        <div className="sm:hidden w-[48px] h-[48px]">
+        <div data-aos="fade-down" data-aos-delay="1600" className="sm:hidden w-[48px] h-[48px]">
           <Hamburger toggled={isOpen} toggle={setOpen} color={"white"} size={25} />;
         </div>
       </div>

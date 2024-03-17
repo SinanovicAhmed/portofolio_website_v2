@@ -10,7 +10,9 @@ const About = () => {
           data-aos="fade-right"
           className="h-full flex flex-col items-center md:items-start min-w-[300px] max-w-[500px]"
         >
-          <h2 className="text-gray md:text-lg font-semibold pb-4">Hi there, welcome to my portofolio website</h2>
+          <h2 className="text-gray md:text-lg text-center md:text-start font-semibold pb-4">
+            Hi there, welcome to my portofolio website
+          </h2>
           <p className="text-gray text-center md:text-start text-sm md:text-base font-light pb-6">
             I am Ahmed Sinanović, a dedicated Software Engineer and Web Developer. <br />
             <br /> I am driven by a passion for continuous learning and ongoing exploration in the ever-evolving world
