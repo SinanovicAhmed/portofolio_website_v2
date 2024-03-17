@@ -1,5 +1,6 @@
 import SocialLinks from "./SocialLinks";
 import { TypewriterEffect } from "./typewriter";
+
 const Hero = () => {
   const heroParagraph = "Hi, I am Ahmed Sinanović";
   const words = heroParagraph.split(" ").map((word) => ({
@@ -8,7 +9,6 @@ const Hero = () => {
       (word == "Ahmed") | (word == "Sinanović") ? "text-primary-yellow font-semibold " : "text-white font-normal "
     }`,
   }));
-  console.log(words);
 
   return (
     <section className="h-screen bg-hero-image bg-no-repeat bg-cover bg-center">
