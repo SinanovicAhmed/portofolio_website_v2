@@ -14,6 +14,7 @@ const App = () => {
     AOS.init({
       offset: 200,
       duration: 700,
+      once: true,
     });
     AOS.refresh();
   }, []);
