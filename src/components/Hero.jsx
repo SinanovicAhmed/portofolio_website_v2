@@ -18,9 +18,9 @@ const Hero = () => {
       >
         <div className="max-w-[800px] px-4 sm:px-10 text-center">
           <TypewriterEffect words={words} />
-          <h4 data-aos="fade-up" data-aos-delay="1000" className="pt-2 md:text-lg font-semibold text-white">
+          <h2 data-aos="fade-up" data-aos-delay="1000" className="pt-2 md:text-lg font-semibold text-white">
             Software Engineer and a Web Developer
-          </h4>
+          </h2>
           <p data-aos="fade-up" data-aos-delay="1200" className="pt-8 text-sm md:text-base text-white font-light">
             Welcome to my digital realm, where creativity meets functionality. As a full-stack web developer, I thrive
             on the dynamic synergy of code and design, building intuitive and powerful websites that leave a lasting

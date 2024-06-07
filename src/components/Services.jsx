@@ -14,7 +14,7 @@ const Services = () => {
             className="flex flex-col bg-gray bg-opacity-5 w-[300px] h-[300px]"
           >
             <div>
-              <img className="mx-auto py-4" width={50} height={50} src={service.icon} />
+              <img className="mx-auto py-4" width={50} height={50} src={service.icon} alt={service.header} />
             </div>
             <div className="grow text-center p-4">
               <h2 className="text-white pb-2">{service.header}</h2>
