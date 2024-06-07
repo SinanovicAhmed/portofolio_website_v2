@@ -1,15 +1,13 @@
+import "aos/dist/aos.css";
+import { useEffect, useState } from "react";
+import MainPage from "./pages/MainPage";
+import LoadingPage from "./pages/LoadingPage";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import About from "./components/About";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
-import Hero from "./components/Hero";
-import Navbar from "./components/Navbar";
-import Projects from "./components/Projects";
-import Services from "./components/Services";
-import { useEffect } from "react";
 
 const App = () => {
+  const [isLoading, setIsLoading] = useState(true);
+
   useEffect(() => {
     AOS.init({
       offset: 200,
@@ -19,17 +17,17 @@ const App = () => {
     AOS.refresh();
   }, []);
 
-  return (
-    <main>
-      <Navbar />
-      <Hero />
-      <About />
-      <Services />
-      <Projects />
-      <Contact />
-      <Footer />
-    </main>
-  );
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 2000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (isLoading) return <LoadingPage />;
+
+  return <MainPage />;
 };
 
 export default App;

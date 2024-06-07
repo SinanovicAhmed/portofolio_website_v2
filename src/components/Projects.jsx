@@ -23,17 +23,17 @@ const Projects = () => {
             data-aos="fade-up"
             data-aos-delay="200"
             key={project.image}
-            className="group relative min-w-[200px] max-w-[400px] rounded-md hover:cursor-pointer"
+            className="group relative max-w-[300px] lg:max-w-[400px] rounded-md hover:cursor-pointer"
           >
             <img src={project.image} alt="about me photo" className="w-full h-auto" />
             <div
               className="absolute bottom-0 p-4 w-full h-full hidden group-hover:flex flex-col justify-between 
                           bg-primary-gray-dark bg-opacity-95 backdrop-blur-sm animate-fade-in rounded-md"
             >
-              <h2 className="text-white text-lg font-semibold pb-2 border-b-2 border-primary-yellow">
+              <h2 className="text-white md:text-lg font-semibold pb-2 border-b-2 border-primary-yellow">
                 {project.header}
               </h2>
-              <p className="text-gray">{project.text}</p>
+              <p className="text-gray text-sm md:text-base">{project.text}</p>
               <span className="flex gap-4">
                 <a href={project.code} target="_blank" rel="noopener">
                   <Button text={"View Code"} />

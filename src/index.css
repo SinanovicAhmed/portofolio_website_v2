@@ -8,3 +8,20 @@
   box-sizing: border-box;
   font-family: "Montserrat";
 }
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(44, 44, 44);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #0a0f1d;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0a0f1d;
+}
