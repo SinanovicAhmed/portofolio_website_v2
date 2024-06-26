@@ -12,10 +12,7 @@ const Hero = () => {
 
   return (
     <section className="h-screen bg-hero-image bg-no-repeat bg-cover bg-center">
-      <div
-        className="w-full h-full flex flex-col items-center justify-center bg-gradient-to-b 
-                 from-primary-gray-light via-transparent to-primary-gray-light"
-      >
+      <div className="w-full h-full flex flex-col items-center justify-center bg-gradient-to-b from-transparent from-40% to-primary-gray-light">
         <div className="max-w-[800px] px-4 sm:px-10 text-center">
           <TypewriterEffect words={words} />
           <h2 data-aos="fade-up" data-aos-delay="1000" className="pt-2 md:text-lg font-semibold text-white">

@@ -15,7 +15,7 @@ const Navbar = () => {
       }`}
     >
       <div className="w-full mx-auto px-4 sm:px-10 h-16 max-w-[1200px] flex justify-between items-center">
-        <h2 data-aos="fade-down" data-aos-delay="1500" className="text-2xl text-white">
+        <h2 data-aos="fade-down" data-aos-delay="1500" className="text-2xl text-white select-none">
           <span className="font-bold text-primary-yellow">SA</span>dev
         </h2>
         <ul className="hidden sm:flex gap-8 text-white">

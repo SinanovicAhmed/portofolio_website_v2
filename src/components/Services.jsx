@@ -11,7 +11,7 @@ const Services = () => {
             data-aos="fade-up"
             data-aos-delay="200"
             key={service.header}
-            className="flex flex-col bg-gray bg-opacity-5 w-[300px] h-[300px]"
+            className="flex flex-col bg-gray bg-opacity-5 w-[300px] h-[300px] select-none"
           >
             <div>
               <img className="mx-auto py-4" width={50} height={50} src={service.icon} alt={service.header} />

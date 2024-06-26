@@ -10,7 +10,7 @@ const About = () => {
           data-aos="fade-right"
           className="h-full flex flex-col items-center lg:items-start min-w-[300px] max-w-[500px]"
         >
-          <h2 className="text-gray md:text-lg text-center lg:text-start font-semibold pb-4">
+          <h2 className="text-gray md:text-lg text-center lg:text-start font-semibold pb-4 bottom-2 b">
             Hi there, welcome to my portofolio website
           </h2>
           <p className="text-gray text-center lg:text-start text-sm md:text-base font-light pb-6">
@@ -29,8 +29,8 @@ const About = () => {
             <Button text={"Download CV"} />
           </a>
         </div>
-        <div data-aos="fade-left" className="hidden lg:block min-w-[300px] max-w-[400px]">
-          <img src="/images/photoofme.png" alt="about me photo" className="w-full h-auto opacity-70" />
+        <div data-aos="flip-left" className="hidden lg:block min-w-[300px] max-w-[400px] hover:rotate-12 opacity-90">
+          <img src="/images/photoofme.png" alt="about me photo" className="w-full h-full opacity-70 drop-shadow-xl" />
         </div>
       </div>
     </section>

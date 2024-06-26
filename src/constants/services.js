@@ -2,7 +2,7 @@ export const services = [
   {
     icon: "/icons/coding.png",
     header: "Custom Web Development",
-    text: "Tailored web solutions to fit your needs. We create responsive frontends and robust backends using moderntechnologies like React.js and Express.js",
+    text: "Tailored web solutions to fit your needs. I create responsive frontends and robust backends using moderntechnologies like React.js and Express.js",
   },
   {
     icon: "/icons/tools.png",

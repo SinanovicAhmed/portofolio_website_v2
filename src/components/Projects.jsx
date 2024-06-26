@@ -7,7 +7,7 @@ const Projects = () => {
   const [visibleProjects, setVisibleProjects] = useState(2);
 
   const loadMoreProjects = () => {
-    setVisibleProjects((prevVisibleProjects) => prevVisibleProjects + 2);
+    setVisibleProjects(projects.length);
   };
 
   const loadLessProjects = () => {
@@ -23,7 +23,7 @@ const Projects = () => {
             data-aos="fade-up"
             data-aos-delay="200"
             key={project.image}
-            className="group relative max-w-[300px] lg:max-w-[400px] rounded-md hover:cursor-pointer"
+            className="group relative max-w-[300px] lg:max-w-[400px] rounded-md hover:cursor-pointer shadow-xl"
           >
             <img src={project.image} alt="about me photo" className="w-full h-auto" />
             <div
@@ -48,13 +48,9 @@ const Projects = () => {
       </div>
       <div className="flex justify-center pt-10">
         {visibleProjects === 2 ? (
-          <button onClick={loadMoreProjects} className="text-primary-yellow hover:font-semibold">
-            Show More
-          </button>
+          <Button text="Show all" onClick={loadMoreProjects} />
         ) : (
-          <button onClick={loadLessProjects} className="text-primary-yellow hover:font-semibold">
-            Show Less
-          </button>
+          <Button text="Show less" onClick={loadLessProjects} />
         )}
       </div>
     </section>

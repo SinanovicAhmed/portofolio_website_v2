@@ -1,10 +1,17 @@
 export const projects = [
   {
     header: "Mechanic Shop Landing Page",
-    text: "Mechanic Shop Landing Page Website created as landing page for car mechanic shop",
+    text: "Landing Page Website created for car mechanic shop",
     image: "/images/mechanic.png",
     code: "https://github.com/SinanovicAhmed/AutoRepairShop-LandingPage",
     demo: "https://www.youtube.com/watch?v=HpKeIVL3-ro",
+  },
+  {
+    header: "Algorithm Visualizer Website",
+    text: "Website for visualizing sorting and searching algorithms with explanation.",
+    image: "/images/visualgo.png",
+    code: "https://github.com/SinanovicAhmed/algo-visualizer",
+    demo: "https://algo-visualizer-mu.vercel.app/",
   },
   {
     header: "Global News Website",
@@ -19,6 +26,13 @@ export const projects = [
     image: "/images/bmanagex.png",
     code: "https://github.com/SinanovicAhmed/BusinessManagmentApp_Frontendd",
     demo: "https://www.youtube.com/watch?v=zzLYzzNuiAM",
+  },
+  {
+    header: "Construction Company Website",
+    text: "Landing page for construction company",
+    image: "/images/integraem.png",
+    code: "",
+    demo: "https://www.youtube.com/watch?v=m5ghVrpsYtE",
   },
   {
     header: "Whiteboard Collaboration Website",
